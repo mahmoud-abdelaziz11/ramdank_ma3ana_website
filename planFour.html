@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imgs/ramadan-icon.png">
+  <title>رمضانك معانا</title>
+  <!-- Render All Elements Normaly -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Main Css File -->
+  <link rel="stylesheet" href="css/ramadan.css">
+  <!-- Google Font => Almarai -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Start Header Section -->
+  <header style="position: relative;">
+    <div class="container">
+      <div class="logo-text">
+        <a href="#">
+          <h1><span class="ramadan">رمضانك</span> <span class="ma3ana">معانا</span></h1>
+        </a>
+      </div>
+      <nav>
+        <i class="fas fa-bars toggle-menu"></i>
+        <ul>
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#">التقويم</a></li>
+          <li><a href="#">الخطط</a></li>
+          <li><a href="#">اتصل بنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header Section -->
+
+  <!-- Start page-image -->
+  <div class="page-image">
+    <div class="content">
+      <div class="welcome-text">
+        <h1>الخطة الرابعة</h1>
+        <span>ختم القرآن أربع مرات </span>
+        <p>شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ وَبَيِّنَاتٍ مِّنَ الْهُدَىٰ
+          وَالْفُرْقَانِ ۚ فَمَن شَهِدَ مِنكُمُ الشَّهْرَ فَلْيَصُمْهُ ۖ وَمَن كَانَ مَرِيضًا أَوْ عَلَىٰ سَفَرٍ
+          فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ ۗ يُرِيدُ اللَّهُ بِكُمُ الْيُسْرَ وَلَا يُرِيدُ بِكُمُ الْعُسْرَ
+          وَلِتُكْمِلُوا الْعِدَّةَ وَلِتُكَبِّرُوا اللَّهَ عَلَىٰ مَا هَدَاكُمْ وَلَعَلَّكُمْ تَشْكُرُونَ </p>
+      </div>
+    </div>
+  </div>
+  <!-- End page-image -->
+
+  <!-- Start plan-content -->
+  <div class="plan-section">
+    <div class="content">
+      <div class="tasks">
+        <div class="task task-1">
+          <div class="outer" onclick="setShow(this.id)" id="1">
+            <p>أذكار الصباح</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="task task-2">
+          <div class="outer" onclick="setShow(this.id)" id="2">
+            <p>الورد اليومي من القرآن</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <!-- start new quran image sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn  -->
+          <div class="inner inner-quran">
+            <div class="plan-quran-text">
+              <h3>الخطة الرابعة</h3>
+              <div class="dardaha">بما انك اخترت الخطة دي فإنت لازم تقرأ أربع أجزاء في اليوم القرآن فيه تلاتين جزء الجزء
+                الاول فيه <span>21 صفحة</span> والجزء الأخير فيه حوالي <span>23 صفحة</span>
+                وباقي الأجزاء فيها <span>20 صفحة</span> يبقى انت محتاج تقراء<span>80</span> وفي الجدول الي تحت ده فيه
+                توزيعة الجزء هنعتمد فيه على ان الجزء
+                عباره عن 20 صفحة بس خلي بالك من عدد صفح الجزء الاول والأخير</div>
+              <div class="responsive-table-quran">
+                <table>
+                  <tr>
+                    <th>عدد الختمات</th>
+                    <th>الفجر</th>
+                    <th>الظهر</th>
+                    <th>العصر</th>
+                    <th>المغرب</th>
+                    <th>العشاء</th>
+                  </tr>
+                  <tr>
+                    <td>ثلاث مرات</td>
+                    <td>16 صفحة</td>
+                    <td>16 صفحة</td>
+                    <td>16 صفحة</td>
+                    <td>16 صفحة</td>
+                    <td>16 صفحة</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="up-image-text">ده المصحف كامل تقدر تقرأ منه</div>
+            <div class="quran-part">
+              <button data-direction="right" class="right-partBtn"><i class="fa-solid fa-angles-right"></i></button>
+              <span>الجزء الاول</span>
+              <button data-direction="left" class="left-partBtn"><i class="fa-solid fa-angles-left"></i></button>
+            </div>
+            <div class="quran-image">
+              <img src="./imgs/1/1.jpg" alt="">
+            </div>
+            <div class="quran-btns">
+              <button class="right-btn" data-direction="right"><i class="fa-solid fa-angles-right"></i></button>
+              <button class="left-btn" data-direction="left"><i class="fa-solid fa-angles-left"></i></button>
+            </div>
+          </div>
+          <!-- End new quran image sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn  -->
+        </div>
+        <div class="task task-3">
+          <div class="outer" onclick="setShow(this.id)" id="3">
+            <p>الصلاوات الخمس والنوافل</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="inner">
+            <div class="box box-one">
+              <div class="content-text">
+                <h3>١- الصلاوات الخمس وسنن الرواتب (اثنتا عشرة ركعة)</h3>
+                <div class="hades">قال رسول الله صلى الله عليه وسلم :" ما من عبد مسلم يصلي لله تعالى في اليوم ثنتي عشر
+                  ركعة تطوعاً غير
+                  الفريضة إلا بنى الله له بيتاً في الجنة " رواه مسلم</div>
+              </div>
+              <div class="responsive-table">
+                <table class="salawat-table">
+                  <tr>
+                    <th>سنة ما قبل الصلاة</th>
+                    <th>الصلاة</th>
+                    <th>سنة ما بعد الصلاة</th>
+                  </tr>
+                  <tr>
+                    <td>ركعتين</td>
+                    <td class="change-c">الفجر</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td>أربع ركعات</td>
+                    <td>الظهر</td>
+                    <td>ركعتين</td>
+                  </tr>
+                  <tr>
+                    <td>--</td>
+                    <td>العصر</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td>--</td>
+                    <td>المغرب</td>
+                    <td>ركعتين</td>
+                  </tr>
+                  <tr>
+                    <td>--</td>
+                    <td>العشاء</td>
+                    <td>ركعتين</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="box box-two">
+              <div class="content-text">
+                <h3>٢- سنة الضحى</h3>
+                <div class="hades">
+                  عَنْ النَّبِيّ صلى الله عليه وسلم أَنَّهُ قَالَ: «يُصْبِحُ عَلَى كُلِّ سُلَامَى مِنْ أَحَدِكُمْ
+                  صَدَقَةٌ، فَكُلُّ تَسْبِيحَةٍ صَدَقَةٌ، وَكُلُّ تَحْمِيدَةٍ صَدَقَةٌ، وَكُلُّ تَهْلِيلَةٍ صَدَقَةٌ،
+                  وَكُلُّ تَكْبِيرَةٍ صَدَقَةٌ، وَأَمْرٌ بِالْمَعْرُوفِ صَدَقَةٌ ، وَنَهْيٌ عَنْ الْمُنْكَرِ صَدَقَةٌ،
+                  وَيُجْزِئُ مِنْ ذَلِكَ رَكْعَتَانِ يَرْكَعُهُمَا مِنْ الضُّحَى».
+                </div>
+              </div>
+            </div>
+            <div class="box box-three">
+              <div class="content-text">
+                <h3>٣- سنة الوتر</h3>
+                <div class="hades">قال رسول الله صلى الله عليه وسلم: ((أوتِروا يا أهلَ القرآن، فإن الله وترٌ يحب الوتر))
+                </div>
+              </div>
+            </div>
+            <div class="box box-four">
+              <div class="content-text">
+                <h3>٤. سنة التهجد (قيام الليل)</h3>
+                <div class="hades">
+                  عليكم بقيام الليل، فإنه دأب الصالحين قبلكم، وقربة إلى الله تعالى، ومنهاة عن الإثم، وتكفير للسيئات
+                  (ومطردة للداء عن الجسد)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="task task-4">
+          <div class="outer" onclick="setShow(this.id)" id="4">
+            <p>أذكار المساء</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+
+        </div>
+        <div class="task task-5">
+          <div class="outer" onclick="setShow(this.id)" id="5">
+            <p>دعاء الفطار</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="inner">
+            <div class="inner-content-text">
+              <h3>دول مجموعة من الادعية تقدر تقولهم قبل الفطار حاول تنوع ما بينهم</h3>
+              <div class="introduction">دعاء الصائم عند الإفطار هو واحد من أفضل أوقات الدعاء، خاصةً في شهر رمضان المعظم،
+                وذلك لأنها عبادة جمعت
+                بين فضل الزمان وفضل العبادة.</div>
+              <div class="doaa">
+                <div>
+                  <h4>1</h4> اَللّهُمَّ اجْعَلْ صِيامي فيهِ صِيامَ الصّائِمينَ وَقِيامي فيِهِ قِيامَ القائِمينَ،
+                  وَنَبِّهْني
+                  فيهِ عَن نَوْمَةِ الغافِلينَ. وَأيضاً هَبْ لي جُرمي فيهِ يا إلهَ العالمينَ، وَأعْفُ عَنّي يا عافِياً
+                  عَنِ المُجرِمينَ.
+                </div>
+                <div>
+                  <h4>2</h4> اَللّهُمَّ قَوِّني في هذا الشهر عَلى إقامَةِ أمرِكَ، وَأذِقني فيهِ حَلاوَةِ ذِكْرِكَ،
+                  وَأوْزِعْني فيهِ لِأداءِ شُكْرِكَ بِكَرَمِكَ. وَاحْفَظْني فيهِ بِحِفظِكَ وَسَتْرِكَ يا أبصَرَ
+                  النّاظِرينَ.
+                </div>
+                <div>
+                  <h4>3</h4> اَللّهُمَّ حَبِّبْ اِلَيَّ في هذا الشهر الْإحسانَ، وَكَرِّهْ فيهِ الْفُسُوقَ وَالعِصيانَ.
+                  وَحَرِّمْ عَلَيَّ فيهِ السَخَطَ وَالنّيرانَ بعَوْنِكَ ياغياثَ المُستَغيثينَ.
+                </div>
+                <div>
+                  <h4>4</h4> اَللّهُمَّ ارْزُقني في هذا الشهر الذِّهنَ وَالتَّنْبيهِ، وَباعِدْني فيهِ مِنَ السَّفاهَةِ
+                  وَالتَّمْويهِ. وَاجْعَل لي نَصيباً مِن كُلِّ خَيْرٍ تُنْزِلُ فيهِ، بِجودِكَ يا اَجوَدَ الأجْوَدينَ.
+                  اَللّهُمَّ ارْزُقْني فيهِ طاعةَ الخاشعين.
+                </div>
+                <div>
+                  <h4>5</h4> اللّهُمَّ افْتَحْ لي في هذا الشهر أبوابَ فَضْلِكَ، وَأنزِل عَلَيَّ فيهِ بَرَكاتِكَ.
+                  وَوَفِّقْني
+                  فيهِ لِمُوجِباتِ مَرضاتِكَ، وَأسْكِنِّي فيهِ بُحْبُوحاتِ جَنّاتَكَ، يا مَجيبَ دَعوَةِ المُضْطَرِّينَ.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text">
+          طالما اخترت الخطه دي فتعالى كده نتكلم في شوية حاجات مطلوبة منك الي فوق دول عبارة عن مهام يومية مطلوب منك تمر
+          عليهم حاول تنظمهم على حسب وقتك بس اهم حاجة تخلصهم بس ي باشا شد الهمه كده واسأل الله لك بركة في الوقت ومتنساناش
+          في دعائك
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End plan-content -->
+
+  <script src="./JS/main.js"></script>
+</body>
+
+</html>
