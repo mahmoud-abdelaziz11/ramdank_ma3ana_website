@@ -17,12 +17,12 @@ xmlhttp.onreadystatechange = function () {
             h = uniqueLenght.length;
 
 
-            quran_image.src = `imgs/1/1.jpg`
+            quran_image.src = `imgs/q1/1.jpg`
 
         }
     }
 };
-xmlhttp.open("GET", `imgs/1`, true);
+xmlhttp.open("GET", `imgs/q1`, true);
 xmlhttp.send();
 
 /*End new quran image sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
