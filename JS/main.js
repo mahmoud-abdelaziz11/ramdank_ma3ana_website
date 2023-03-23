@@ -256,13 +256,13 @@ setTimeout(() => {
             if (e.currentTarget.dataset.direction == "left") {
                 if (Qcounter >= 1 && Qcounter < h) {
                     Qcounter += 1
-                    quran_image.src = `../imgs/${Pcounter}/${Qcounter}.jpg`
+                    quran_image.src = `./imgs/${Pcounter}/${Qcounter}.jpg`
                 }
             }
             else if (e.currentTarget.dataset.direction == "right") {
                 if (Qcounter > 1) {
                     Qcounter -= 1
-                    quran_image.src = `../imgs/${Pcounter}/${Qcounter}.jpg`
+                    quran_image.src = `./imgs/${Pcounter}/${Qcounter}.jpg`
                 }
 
 
