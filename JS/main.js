@@ -251,24 +251,6 @@ setTimeout(() => {
             }
         })
     }
-    for (let i = 0; i < quran_btns.length; i++) {
-        quran_btns[i].addEventListener("click", function (e) {
-            if (e.currentTarget.dataset.direction == "left") {
-                if (Qcounter >= 1 && Qcounter < h) {
-                    Qcounter += 1
-                    quran_image.src = `./imgs/${Pcounter}/${Qcounter}.jpg`
-                }
-            }
-            else if (e.currentTarget.dataset.direction == "right") {
-                if (Qcounter > 1) {
-                    Qcounter -= 1
-                    quran_image.src = `./imgs/${Pcounter}/${Qcounter}.jpg`
-                }
-
-
-            }
-        })
-    }
     ////// new wwwwwwwwwwwwwwwwwwwwwww
     for(let i= 0;i<nav.length;i++){
         nav[i].addEventListener("touchstart",(e)=>{
@@ -381,5 +363,28 @@ setTimeout(() => {
     }
 }, 600)
 
+setTimeout(() => {
+    let quran_btns = document.querySelectorAll(".quran-btns button")
+    let quran_image = document.querySelector(".quran-image img")
+    let partBtn = document.querySelectorAll(".quran-part button")
+    let partText = document.querySelector(".quran-part span")
+     for (let i = 0; i < quran_btns.length; i++) {
+        quran_btns[i].addEventListener("click", function (e) {
+            if (e.currentTarget.dataset.direction == "left") {
+                if (Qcounter >= 1 && Qcounter < h) {
+                    Qcounter += 1
+                    quran_image.src = `./imgs/${Pcounter}/${Qcounter}.jpg`
+                }
+            }
+            else if (e.currentTarget.dataset.direction == "right") {
+                if (Qcounter > 1) {
+                    Qcounter -= 1
+                    quran_image.src = `./imgs/${Pcounter}/${Qcounter}.jpg`
+                }
 
+
+            }
+        })
+    }
+},600);
 console.log("mohamed emad")
