@@ -311,7 +311,7 @@ setTimeout(() => {
         nav[i].addEventListener("click",(e)=>{
             
             if(e.currentTarget.innerText == "الرئيسية"){
-                if(window.location.href.includes("index.html")){
+                if(!window.location.href.includes("index.html")){
                     location.assign("index.html")
                 }
                 else{
@@ -320,7 +320,7 @@ setTimeout(() => {
                 
             }
             else if(e.currentTarget.innerText == "التقويم"){
-                if(window.location.href.includes("index.html")){
+                if(!window.location.href.includes("index.html")){
                     location.assign("index.html#calendar")
                 }
                 else{
@@ -329,7 +329,7 @@ setTimeout(() => {
                 
             }
             else if(e.currentTarget.innerText == "الخطط"){
-                if(window.location.href.includes("index.html")){
+                if(!window.location.href.includes("index.html")){
                     location.assign("index.html#plans")
                 }
                 else{
@@ -338,7 +338,7 @@ setTimeout(() => {
                 
             }
             else if(e.currentTarget.innerText == "أذكار"){
-                if(window.location.href.includes("index.html")){
+                if(!window.location.href.includes("index.html")){
                     location.assign("index.html#azkar")
                 }
                 else{
@@ -347,7 +347,7 @@ setTimeout(() => {
                 
             }
             else if(e.currentTarget.innerText == "اتصل بنا"){
-                if(window.location.href.includes("index.html")){
+                if(!window.location.href.includes("index.html")){
                     location.assign("index.html#contact")
                     
                 }
