@@ -387,7 +387,5 @@ setTimeout(() => {
         })
     }
 },600);
-setTimeout(() => {
-    
-}
+
 console.log("mohamed emad")
