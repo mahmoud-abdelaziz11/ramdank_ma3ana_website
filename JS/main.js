@@ -7,7 +7,7 @@ let outer = document.querySelectorAll(".outer");
 
 
 /*start new quran image sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
-var xmlhttp = new XMLHttpRequest();
+
 
 
 /*End new quran image sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
