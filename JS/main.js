@@ -9,21 +9,6 @@ let outer = document.querySelectorAll(".outer");
 /*start new quran image sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 var xmlhttp = new XMLHttpRequest();
 
-xmlhttp.onreadystatechange = function () {
-    if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-        if (xmlhttp.status == 200) {
-            var n = (xmlhttp.responseText.match(/([1-9][0-9]{0,2}|1000).jpg/g) || []);
-            uniqueLenght = [...new Set(n)];
-            h = uniqueLenght.length;
-
-
-            quran_image.src = `imgs/q1/1.jpg`
-
-        }
-    }
-};
-xmlhttp.open("GET", `imgs/q1`, true);
-xmlhttp.send();
 
 /*End new quran image sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 Object.defineProperties(Array.prototype, {
@@ -196,7 +181,7 @@ let Quran_parts = {
 /*start new quran image sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 let quran_image = document.querySelector(".quran-image img")
 
-let h = 1
+let h = 21
 // الخاص بحمل رقم الصفحات 
 let Qcounter = 1;
 // الخاص بحمل رقم الاجزاء 
@@ -206,7 +191,7 @@ let pageCounter = 1
 // متغير غرضة عمل تشيك للpagecounter
 let pageCounterFake = 22
 
-quran_image.src = `./imgs/1/quran-1.jpg`
+quran_image.src = `./imgs/1/1.jpg`
 setTimeout(() => {
     let quran_btns = document.querySelectorAll(".quran-btns button")
     let quran_image = document.querySelector(".quran-image img")
@@ -223,23 +208,22 @@ setTimeout(() => {
                     
 
                     partText.innerText = Quran_parts[Pcounter]
-                    var xmlhttp = new XMLHttpRequest();
-
-                    xmlhttp.onreadystatechange = function () {
-                        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-                            if (xmlhttp.status == 200) {
-                                var n = (xmlhttp.responseText.match(/([1-9][0-9]{0,2}|1000).jpg/g) || []);
-                                uniqueLenght = [...new Set(n)];
-                                h = uniqueLenght.length;
-                                Qcounter = 1
-                                
-                                quran_image.src = `../imgs/${Pcounter}/1.jpg`
-
-                            }
+                    if(Pcounter == 1){
+                            Qcounter = 1
+                            h = 21
+                            quran_image.src = `./imgs/${Pcounter}/1.jpg`
+                        }else if (Pcounter == 30){
+                            Qcounter = 1
+                            h = 21
+                            quran_image.src = `./imgs/${Pcounter}/1.jpg`
                         }
-                    };
-                    xmlhttp.open("GET", `../imgs/${Pcounter}`, true);
-                    xmlhttp.send();
+                        else{
+                            Qcounter = 1
+                            h = 20
+                            quran_image.src = `./imgs/${Pcounter}/1.jpg`
+                        }
+
+                   
 
 
                 }
@@ -248,24 +232,20 @@ setTimeout(() => {
                     Pcounter -= 1
 
                     partText.innerText = Quran_parts[Pcounter]
-                    var xmlhttp = new XMLHttpRequest();
-
-                    xmlhttp.onreadystatechange = function () {
-                        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-                            if (xmlhttp.status == 200) {
-                                var n = (xmlhttp.responseText.match(/([1-9][0-9]{0,2}|1000).jpg/g) || []);
-                                uniqueLenght = [...new Set(n)];
-                                h = uniqueLenght.length;
-                                Qcounter = 1
-                                
-                                quran_image.src = `../imgs/${Pcounter}/1.jpg`
-
-                            }
+                   if(Pcounter == 1){
+                            Qcounter = 1
+                            h = 21
+                            quran_image.src = `./imgs/${Pcounter}/1.jpg`
+                        }else if (Pcounter == 30){
+                            Qcounter = 1
+                            h = 21
+                            quran_image.src = `./imgs/${Pcounter}/1.jpg`
                         }
-                    };
-                    xmlhttp.open("GET", `./imgs/${Pcounter}`, true);
-                    xmlhttp.send();
-
+                        else{
+                            Qcounter = 1
+                            h = 20
+                            quran_image.src = `./imgs/${Pcounter}/1.jpg`
+                        }
 
                 }
             }
