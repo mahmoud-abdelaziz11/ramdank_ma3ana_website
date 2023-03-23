@@ -16,9 +16,8 @@ xmlhttp.onreadystatechange = function () {
             uniqueLenght = [...new Set(n)];
             h = uniqueLenght.length;
 
-            console.log("hgosdlkighdoasilaghbds;i")
-            console.log(2)
-            quran_image.src = `./imgs/1/1.jpg`
+
+            quran_image.src = `../imgs/1/1.jpg`
 
         }
     }
@@ -190,67 +189,8 @@ let Quran_parts = {
     30: "الجزء الثلاثون",
 
 };
-// setTimeout(() => {
-//     let quran_btns = document.querySelectorAll(".quran-btns button")
-//     let quran_image = document.querySelector(".quran-image img")
-//     let partBtn = document.querySelectorAll(".quran-part button")
-//     let partText = document.querySelector(".quran-part span")
-//     partText.innerText = Quran_parts[1]
-//     for (let i = 0; i < partBtn.length; i++) {
-//         partBtn[i].addEventListener("click",(e)=>{
-//             if (e.currentTarget.dataset.direction == "left") {
-//                 if (Pcounter >= 1 && Pcounter <30) {
-//                     Pcounter += 1
-//                     if(604>pageCounter){
-//                         pageCounter += 21
-//                         pageCounterFake = pageCounter
-//                     }
 
-//                     partText.innerText = Quran_parts[Pcounter]
-//                     quran_image.src = `./imgs/quran/quran-${pageCounter}.jpg`
-//                 }
-//             }else if(e.currentTarget.dataset.direction == "right"){
-//                 if (Pcounter > 1) {
-//                     Pcounter -= 1
-//                     if(pageCounter>0){
-//                         pageCounter -= 21
-//                         pageCounterFake = pageCounter
-//                     }
 
-//                     partText.innerText = Quran_parts[Pcounter]
-//                     quran_image.src = `./imgs/quran/quran-${pageCounter}.jpg`
-//                 }
-//             }
-//         })
-//     }
-//     for (let i = 0; i < quran_btns.length; i++) {
-//         quran_btns[i].addEventListener("click", function (e) {
-//             if(pageCounterFake == pageCounter){
-//                 Qcounter = pageCounter
-//             }
-//             console.log(e.currentTarget.dataset.direction)
-//             if (e.currentTarget.dataset.direction == "right") {
-//                 if (Qcounter > 1 && Qcounter>pageCounter) {
-//                     Qcounter -= 1
-//                     pageCounterFake -= 1
-//                     quran_image.src = `./imgs/quran/quran-${Qcounter}.jpg`
-//                     console.log(pageCounter)
-//                 }
-//                 console.log(Qcounter)
-//             }
-//             else if (e.currentTarget.dataset.direction == "left") {
-//                 if (Qcounter >= 1 && Qcounter<pageCounter+21) {
-//                     Qcounter += 1
-//                     pageCounterFake += 1
-//                     quran_image.src = `./imgs/quran/quran-${Qcounter}.jpg`
-//                     console.log(pageCounter)
-//                 }
-//                 console.log(Qcounter)
-//             }
-//         })
-//     }
-
-// }, 600)
 
 
 /*start new quran image sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
@@ -293,12 +233,12 @@ setTimeout(() => {
                                 h = uniqueLenght.length;
                                 Qcounter = 1
                                 
-                                quran_image.src = `./imgs/${Pcounter}/1.jpg`
+                                quran_image.src = `../imgs/${Pcounter}/1.jpg`
 
                             }
                         }
                     };
-                    xmlhttp.open("GET", `./imgs/${Pcounter}`, true);
+                    xmlhttp.open("GET", `../imgs/${Pcounter}`, true);
                     xmlhttp.send();
 
 
@@ -318,7 +258,7 @@ setTimeout(() => {
                                 h = uniqueLenght.length;
                                 Qcounter = 1
                                 
-                                quran_image.src = `./imgs/${Pcounter}/1.jpg`
+                                quran_image.src = `../imgs/${Pcounter}/1.jpg`
 
                             }
                         }
@@ -336,13 +276,13 @@ setTimeout(() => {
             if (e.currentTarget.dataset.direction == "left") {
                 if (Qcounter >= 1 && Qcounter < h) {
                     Qcounter += 1
-                    quran_image.src = `./imgs/${Pcounter}/${Qcounter}.jpg`
+                    quran_image.src = `../imgs/${Pcounter}/${Qcounter}.jpg`
                 }
             }
             else if (e.currentTarget.dataset.direction == "right") {
                 if (Qcounter > 1) {
                     Qcounter -= 1
-                    quran_image.src = `./imgs/${Pcounter}/${Qcounter}.jpg`
+                    quran_image.src = `../imgs/${Pcounter}/${Qcounter}.jpg`
                 }
 
 
@@ -451,7 +391,7 @@ setTimeout(() => {
                 }
                 
                 else if(window.location.href.includes("index.html")){
-                    console.log("sdfg")
+                    
                     location.assign("#contact")
                 }
                 
